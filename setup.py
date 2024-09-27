@@ -25,6 +25,8 @@ ext_modules = [
         sources=['plyvel/_plyvel.cpp', 'plyvel/comparator.cpp'],
         libraries=['leveldb'],
         extra_compile_args=extra_compile_args,
+        include_dirs=['/opt/homebrew/Cellar/leveldb/1.23_1/include/'],
+        library_dirs=['/opt/homebrew/Cellar/leveldb/1.23_1/lib/'],
     )
 ]
 
